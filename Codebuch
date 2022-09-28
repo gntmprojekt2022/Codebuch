@@ -49,6 +49,10 @@
     job = Berufe ohne Öffentlichkeitsauftritt
     influencer = Influencer, ab 50 Tausend Abonnenten
     love = romatische Beziehung
+    student = Schülerin
+    model = Model
+    trainee = Auszubildende
+    music = Musik
     
     **sector**
     tv show = Shows, die im Fernsehen ausgestrahlt werden (Reality-TV-, Quiz-, Talent-, Castingshows, TV Serien)
@@ -60,6 +64,15 @@
     advertisement = Werbekampagnen
     journalism = journalistische Beschäftigungen
     social media = Soziale-Netzwerke
+    university = Universität
+    video game = Videospiel
+    gaming = Gaming
+    company = Unternehmen
+    music = Musikindustrie
+    school = Schule
+    health = Gesundheitssektor
+    poetry = Poesie
+    church = Kirche
     
     **channel**
     Alle Sender auf denen die jeweiligen Shows/Serien liefen und mit denen die Kandidatinnen womöglich assoziiert werden.
@@ -92,6 +105,13 @@
     streaming = Plattformen, auf denen Straming erfolgt (z.B. Netflix, Prime Video, maxdome)
     job = Berufe ohne Öffentlichkeitsauftritt
     soccer player = Fußballspieler, der in Beziehung mit Kandidatin steht
+    cooperation = Zusammenarbeit mit einem Unternehmen, das nicht die eigene Marke ist
+    taxes = Steuerberatung
+    media = Medien
+    education = Bildung
+    health = Gesundheitssektor
+    music video = Musikvideo
+    gaming = Gaming
     
 
     **birth year**    
