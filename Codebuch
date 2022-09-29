@@ -79,6 +79,8 @@
     poetry = Poesie
     church = Kirche
     literature = Literatur
+    food = Im Food & Beverages (z.B. Bäckereien, Gastronomie etc.)
+    
     
     **channel**
     Alle Sender auf denen die jeweiligen Shows/Serien liefen und mit denen die Kandidatinnen womöglich assoziiert werden.
@@ -121,7 +123,6 @@
     musician = Kanditat*in ist in Beziehung mit Musiker 
     cooperation = Zusammenarbeit mit einem Unternehmen, das nicht die eigene Marke ist
     education = Bildung
-    health = Gesundheitssektor
     music video = Musikvideo
     gaming = Gaming
     nonprofit = Non-Profit-Organisationen
