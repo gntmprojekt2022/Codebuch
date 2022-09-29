@@ -81,8 +81,14 @@
     - Pro7
     - Puls4 (Österreich)
     - RTL
-    - SAT1
     - ARD
+    - Sat1
+    - Sat2
+    - VOX
+    - Sky
+    - joyn
+    - WDR
+    - ZDF
   
 
     # NODE-Attribute  
@@ -106,12 +112,9 @@
     brand = eigene Marke der Kandidatin
     streaming = Plattformen, auf denen Straming erfolgt (z.B. Netflix, Prime Video, maxdome)
     job = Berufe ohne Öffentlichkeitsauftritt
-    soccer player = Fußballspieler, der in Beziehung mit Kandidatin steht
-    musiker = Kanditat*in ist in Beziehung mit Musiker 
-    artist = Künstler
+    partner = Partner*in einer Kandidatin
+    musician = Kanditat*in ist in Beziehung mit Musiker 
     cooperation = Zusammenarbeit mit einem Unternehmen, das nicht die eigene Marke ist
-    taxes = Steuerberatung
-    media = Medien
     education = Bildung
     health = Gesundheitssektor
     music video = Musikvideo
