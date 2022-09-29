@@ -44,6 +44,7 @@
     jury = Juror einer Casting-/Wettbewerb Show 
     voice actor = Synchronsprecherin in Filmen oder ähnlichem
     actor = Schauspielerin/Gast- oder Nebenrolle in Filmen oder Serien
+    author = Autor eines Buches
     founder = Gründerin (z.B. eigenes Modelabel, Online Magazin, Unternehmen)
     ambassador = Botschafterin oder Gesicht einer Marke
     job = Berufe ohne Öffentlichkeitsauftritt
@@ -77,6 +78,7 @@
     health = Gesundheitssektor
     poetry = Poesie
     church = Kirche
+    literature = Literatur
     
     **channel**
     Alle Sender auf denen die jeweiligen Shows/Serien liefen und mit denen die Kandidatinnen womöglich assoziiert werden.
@@ -91,6 +93,7 @@
     - joyn
     - WDR
     - ZDF
+    - KabelEins
   
 
     # NODE-Attribute  
@@ -131,8 +134,8 @@
     
       
     **sex***    
-    weiblich
-    männlich
+    female
+    male
     divers
 
     **hair**  
