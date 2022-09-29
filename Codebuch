@@ -56,9 +56,11 @@
     
     **sector**
     tv show = Shows, die im Fernsehen ausgestrahlt werden (Reality-TV-, Quiz-, Talent-, Castingshows, TV Serien)
+    show business = Kandidat*in ist im Bereich "Show Business" unter Vertrag
     modeling = Alle Beschäftigungen, die in der Modebranche stattfinden
     fashion = Alle Knoten, die in der Kleidungs-/Accessoiresbranche liegen
     movie = Alle Knoten der Filmindustrie
+    documentation = Dokumentation
     event = Event
     music video = Kandidatinnen, die teil eines Musikvideos waren
     advertisement = Werbekampagnen
@@ -109,8 +111,8 @@
     magazine = Magazin
     event = Event/Veranstaltung
     movie = Film
+    documentation = Dokumentation
     brand = eigene Marke der Kandidatin
-    streaming = Plattformen, auf denen Straming erfolgt (z.B. Netflix, Prime Video, maxdome)
     job = Berufe ohne Öffentlichkeitsauftritt
     partner = Partner*in einer Kandidatin
     musician = Kanditat*in ist in Beziehung mit Musiker 
