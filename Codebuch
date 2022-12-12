@@ -174,11 +174,15 @@
 
     **season_gntm**  
     jeweilige Staffel der Kandidatin
+    
+    StaffelEins = Staffel 1.
+    SteffelZwei = Staffel 2.
+    usw.
 
     **place_gntm** 
     Platzierung der Kandidatin bei GNTM. 
-    1 = 1. Platz
-    2 = 2. Platz
-    3 = 3. Platz
+    first = 1. Platz
+    second = 2. Platz
+    third = 3. Platz
 
     ##
