@@ -3,8 +3,8 @@
     erstellt von Swaran Sandhu (sandhu@hdm-stuttgart.de)
 
     ## Inhalt
-    - Edges.csv (Edgelist)
-    - Nodes.csv (Nodelist)
+    - Edgelist.csv (Edgelist)
+    - Nodelist.csv (Nodelist)
     - Codebuch.md (Codierung der Datensätze)
 
     ## Ursprung und Datenerhebung
