@@ -1,14 +1,16 @@
-    # Datensatz GNTN #
-    Codebuch Stand 2022-06, 
-    erstellt von Swaran Sandhu (sandhu@hdm-stuttgart.de)
-
+ # Datensatz GNTN #
+    Codebuch Stand 2022-12, 
+    erstellt von Team GNTN (ht024, sm247, vf019, lz035, ab288)
+    
     ## Inhalt
-    - Edgelist.csv (Edgelist)
-    - Nodelist.csv (Nodelist)
+    - Edges.csv (Edgelist)
+    - Nodes.csv (Nodelist)
     - Codebuch.md (Codierung der Datensätze)
 
     ## Ursprung und Datenerhebung
-   Wir erheben einen Datensatz der Top 3 Finalistinnen der vergangenen 16 Staffeln Germays Next Topmodel, um herauszufinden, ob die Kandidatinnen nach der  Teilnahme an der Sendung beruflichen Erfolg in der Modelbranche erzielen. Die Daten entstammen einer gründlichen Internetrecherche.
+  
+    Unsere Datenerhebung fundiert auf einer intensiven Internetrecherche. 
+    Der Datensatz basiert auf den Top 3 Kandidatinnen der vergangenen 16 Staffeln Germanys next Topmodel. 
 
     Das Netzwerk ist ein *ungerichtetes two-mode Akteursnetzwerk*. 
       
@@ -20,70 +22,77 @@
     # EDGE-Attribute
 
     **from**
-    Knoten, in diesem Fall: Kandidatinnen aus jeweiliger Staffel 
-
+    Knoten, in diesem Fall: Kandidatinnen aus den jeweiligen Staffeln, definiert mit ihrer ID.
+    
     **to**
-    Knoten, in diesem Fall: Kandidatinnen stehen in Arbeits-/Liebesverhältnis mit jeweiligem Knoten. 
+    Knoten, in diesem Fall: Das Arbeits-/Liebesverhältnis das die Kandidatinnen zu den Knoten pflegen. Diese sind ebenfalls durch IDs definiert.
+    
     Beispielsweise:
     - Modelagenturen
-    - TV shows und Filme
-    - Berufe ohne Öffentlichkeitsauftritt
+    - TV shows, Filme und Musikvideos
+    - Jobs ohne Öffentlichkeitsauftritt 
+    - Jobs mit Öffentlichkeitsauftritt (z.B. Fashionshows etc.)
     - Romantische Beziehung mit Personen des öffentlichen Lebens
-    - Werbekampagnen
+    - Werbekampagnen diverser Firmen
     - Soziale-Netzwerk-Plattform (z.B. Instagram, Twitter, Tiktok)
     
     Wir erfassen unter diesen Punkt alle Akteure die Einfluss auf den Werdegang der Kandidatinnen haben oder hatten.
     
     **year**
-    Jahr, in dem die jeweilige Beziehung stattgefunden hat.
+    Das Jahr, in dem die jeweilige Beziehung stattgefunden hat.
     
     **relationship**  
-    candidate = Teilnehmenrin oder Kandidatin einer TV Show (Reality-TV-, Quiz-, Talent-, Castingshows)
-    contract = Vertragsbeziehung der (ehem.) Kandidatin und dem Knoten (z.B. Verträge zwischen Model und Agentur)
-    host = Moderation einer Show (Reality-TV-, Quiz-, Talent-, Castingshows, Podcast) 
-    jury = Juror einer Casting-/Wettbewerb Show 
-    voice actor = Synchronsprecherin in Filmen oder ähnlichem
-    actor = Schauspielerin/Gast- oder Nebenrolle in Filmen oder Serien
-    author = Autor eines Buches
-    founder = Gründerin (z.B. eigenes Modelabel, Online Magazin, Unternehmen)
-    ambassador = Botschafterin oder Gesicht einer Marke
-    job = Berufe ohne Öffentlichkeitsauftritt
-    influencer = Influencer, ab 50 Tausend Abonnenten
-    love = romatische Beziehung
-    student = Schülerin/Studentin
-    model = Job, den Kandidation für Kund*in innerhalb der Modebranche macht
-    trainee = Auszubildende
-    music = Musik
+    Die Beziehung zwischen den Kandidatinnen und der jeweiligen Knoten wird definiert in folgenden Kategorien:
+    
+    -candidate = Teilnehmenrin oder Kandidatin einer TV Show (Reality-TV-, Quiz-, Talent-, Castingshows)
+    -contract = Vertragsbeziehung der (ehem.) Kandidatin und dem Knoten (z.B. Verträge zwischen Model und Agentur)
+    -host = Moderatorin einer Show (Reality-TV-, Quiz-, Talent-, Castingshows, Podcast) 
+    -jury = Juror einer Casting-/Wettbewerb Show 
+    -voice actor = Synchronsprecherin in Filmen oder ähnlichem
+    -actor = Schauspielerin/Gast- oder Nebenrolle in Filmen oder Serien
+    -author = Autorin eines Buches
+    -founder = Gründerin (z.B. eigenes Modelabel, Online Magazin, Unternehmen)
+    -ambassador = Botschafterin oder Gesicht einer Marke
+    -job = Berufe ohne Öffentlichkeitsauftritt (private Jobs)
+    -influencer = Influencerin  (ab 50 Tausend Abonnent*innen)
+    -love = romatische Beziehung zum Knoten
+    -student = Schülerin/Studentin
+    -trainee = Auszubildende
+    -employee = Arbeiterin bei einem Beruf ohne Öffentlichkeitsauftritt
+    -model = Job, den Kandidation für Kund*in innerhalb der Modebranche macht
+    -music = Musik
     
     **sector**
-    tv show = Shows, die im Fernsehen ausgestrahlt werden (Reality-TV-, Quiz-, Talent-, Castingshows, TV Serien)
-    show business = Kandidat*in ist im Bereich "Show Business" unter Vertrag
-    modeling = Alle Beschäftigungen, die in der Modebranche stattfinden
-    fashion = Alle Knoten, die in der Kleidungs-/Accessoiresbranche liegen
-    movie = Alle Knoten der Filmindustrie
-    documentation = Dokumentation
-    event = Event
-    music video = Kandidatinnen, die teil eines Musikvideos waren
-    advertisement = Werbekampagnen
-    journalism = journalistische Beschäftigungen
-    social media = Soziale-Netzwerke
-    university = Universität
-    podcast = Podcast
-    video game = Videospiel
-    gaming = Gaming
-    company = Unternehmen
-    charity = Gemeinnützige Organisation
-    music = Musikindustrie
-    school = Schule
-    health = Gesundheitssektor
-    poetry = Poesie
-    church = Kirche
-    literature = Literatur
-    food = Im Food & Beverages (z.B. Bäckereien, Gastronomie etc.)
+    Die jeweiligen Beziehungen werden hier in Sektoren unterteilt, um einen besseren Überblick zu ermöglichen.
     
+    -modeling = Alle Beschäftigungnen, die innerhalb der Modebranche stattfinden und als Modeln bezeichnet werden können
+    -fashion = Beschäftigungne die innerhalb der Kleidungs-/Accessoiresbranche liegen
+    -cosmetic = Beschäftigungen innerhalb der Beautybranche (Make-Up Firmen etc.)
+    -agency = Agenturen
+    -socialmedia = Sozialenetzwerke 
+    -tvshow = Sendungen die im Fernsehen ausgestrahlt werden (Reality-TV, Quiz-, Talent-, Castingshows, TV Serien)
+    -advertisement = Auftritte bei Musikvideos
+    -movie = Filme und die Filmindustrie
+    -musicvideo = Auftritte bei Musikvideos
+    -music = Beschäftigungen innerhalb der Musikindustrie (Sängerin, Bandmitglied etc.)
+    -documentation = Dokumentarfilme
+    -showbusiness = Beschäftigungen im Show Business die unter Vertrag stehen
+    -event = einzelne Events
+    -journalism = journalistische Beschäftigungen
+    -podcast = Podcast
+    -literatur = Bücher und Lektüren
+    -gaming = Beschäftigungen innerhalb des Gamingsektors
+    -charity = Ehrenamt und Hilfsorganisationen (Gemeinnützige Organisationen)
+    -food = Lebensmittel- und Getränkebranche (z.B. Gatronomie, Kaffee etc.)
+    -health = Beschäftigungen innerhalb des Lifestyle Gesundheitssektors
+    -medicin = Beschäftigungen innerhalb des medizinischen Gesundheitssektors
+    -church = Kirche
+    -tax consultancy = Steuerberatung
+    -university = Studium an einer Universität
     
     **channel**
     Alle Sender auf denen die jeweiligen Shows/Serien liefen und mit denen die Kandidatinnen womöglich assoziiert werden.
+    
     - Pro7
     - Puls4 (Österreich)
     - RTL
@@ -96,7 +105,16 @@
     - WDR
     - ZDF
     - KabelEins
-  
+    
+    **id**
+    Kandidatinnen, definiert mit ihrer ID.
+    
+    **season**
+    vereinzelt: Kandidatinnen aus Staffel eins und sechszehn wurden ermittelt.
+    
+    -eins = Kandidatin aus der Staffel 1
+    -sechszehn = Kandidatin aus der Staffel 1
+
 
     # NODE-Attribute  
       
@@ -107,73 +125,80 @@
     Vollständiger und ausgeschriebener Name (der Kandidatin/Agentur/Marke...)
 
     **name_short**
-    Vorname abgekürzt, z.B. für Visualiserung, falls der Name zu lange ist
+    Vorname abgekürzt, z.B. für Visualiserung, falls der Name zu lange ist.
     
     **type**
-    model = Kanditatin von GNTM
-    tv = Shows, die im Fernsehen ausgestrahlt werden (Reality-TV-, Quiz-, Talent-, Castingshows, TV Serien)
-    agency = Agentur, bei der die jeweilige Kandidatin unter Vertrag steht
-    magazine = Magazin
-    event = Event/Veranstaltung
-    competition = Wettbewerb
-    movie = Film
-    documentation = Dokumentation
-    brand = eigene Marke der Kandidatin
-    job = Berufe ohne Öffentlichkeitsauftritt
-    partner = Partner*in einer Kandidatin
-    musician = Kanditat*in ist in Beziehung mit Musiker 
-    cooperation = Zusammenarbeit mit einem Unternehmen, das nicht die eigene Marke ist
-    education = Bildung
-    music video = Musikvideo
-    gaming = Gaming
-    nonprofit = Non-Profit-Organisationen
-    fashion show = Modeschau (z.B. Fashion Week New York, Paris, Milan, etc.) 
-    podcast = Podcast
+    Art des Knotens, um Übersicht zu schaffen.
     
+    -model = GNTM Kandidatin (unsere Models)
+    -tv = Fernsehsendungen (Reality-TV-, Quiz-, Talent-, Castingshows, TV Serien)
+    -movie = Filme
+    -streaming = Sendungen/Filme auf Streaming Plattformen
+    -documentation = Dokumentarfilm
+    -agency = Agentur, bei der die jeweiligen Kandidatinnen unter Vertrag stehen
+    -magazine = Zeitschriften
+    -event = einzelene Veranstaltung
+    -competition = Wettbewerbe
+    -brand = eigene Marke der Kandidatin
+    -job = Berufe ohne Öffentlichkeitsauftritt
+    -cooperation = Zusammenarbeit mit einem Unternehmen, dass nicht eine eigene Marke ist
+    -nonprofit = Non-Profit-Organisationen
+    -partner = Partner*in einer Kandidatin (nur Personen des Öffentlichenlebens)
+    -musician = Musiker
+    -musicvideo = Musikvideo
+    -music = Musik
+    -education = Bildung
+    -fashionshow = Modeshows (z.B. Fashion Week New York, Paris, Milan, etc.)
+    -literatur = Bücher
+    -socialmedia = Soziale Netzwerke
+    -podcast = Podcasts
+    -gaming = Gaming
+    -foundation = Organisationen
 
     **birth year**    
-    Geburtsjahre der einzelnen Kandiatinnen.
+    Geburtsjahr der einzelnen Kandidatinnen und Partner
     
-      
     **sex***    
-    female
-    male
-    divers
+    -female
+    -male
+    -divers
 
     **hair**  
     Haarfarbe, aus dem jeweiligen Staffelfinale:
-    black
-    brown
-    blonde
-    red
-    coloured
+    
+    -black
+    -brown
+    -blonde
+    -red
+    -coloured
 
     **skin**  
     Hautfarbe:
-    light
-    medium
-    dark
+    
+    -light
+    -medium
+    -dark
     
     **place of birth**   
-    Geburtsort der Kandidatin.
+    Geburtsort der Kandidatin
     
     **nationality**   
     Nationalität der Kandidatin
 
     **ethnicity**    
-    Herkunft der Kanditation nach Land
+    Herkunft der Kandidatin nach Land
       
     **follower_insta**    
-    Anzahl der Follower auf Instagram in tausender Schritten. (Stand:2022)
+    Anzahl der Follower auf Instagram in tausender Schritten. (Stand:August 2022)
  
     **follower_tiktok**  
-    Anzahl der Follower auf TikTok in tausender Schritten. (Stand:2022)
+    Anzahl der Follower auf TikTok in tausender Schritten. (Stand:August 2022)
       
     **market_cap**    
-    Marktwert der Kandidatin 
+    Marktwert der Kandidatin
 
     **season_gntm**  
-    jeweilige Staffel der Kandidatin
+    jeweilige Staffel an der die Kandidatin teilgenommen hat
     
     StaffelEins = Staffel 1.
     SteffelZwei = Staffel 2.
@@ -181,6 +206,7 @@
 
     **place_gntm** 
     Platzierung der Kandidatin bei GNTM. 
+    
     first = 1. Platz
     second = 2. Platz
     third = 3. Platz
